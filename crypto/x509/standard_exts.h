@@ -13,14 +13,14 @@
  */
 
 static const X509V3_EXT_METHOD *standard_exts[] = {
-    &ossl_v3_nscert,
-    &ossl_v3_ns_ia5_list[0],
-    &ossl_v3_ns_ia5_list[1],
-    &ossl_v3_ns_ia5_list[2],
-    &ossl_v3_ns_ia5_list[3],
-    &ossl_v3_ns_ia5_list[4],
-    &ossl_v3_ns_ia5_list[5],
-    &ossl_v3_ns_ia5_list[6],
+    // &ossl_v3_nscert,
+    // &ossl_v3_ns_ia5_list[0],
+    // &ossl_v3_ns_ia5_list[1],
+    // &ossl_v3_ns_ia5_list[2],
+    // &ossl_v3_ns_ia5_list[3],
+    // &ossl_v3_ns_ia5_list[4],
+    // &ossl_v3_ns_ia5_list[5],
+    // &ossl_v3_ns_ia5_list[6],
     &ossl_v3_skey_id,
     &ossl_v3_key_usage,
     &ossl_v3_pkey_usage_period,
@@ -37,8 +37,8 @@ static const X509V3_EXT_METHOD *standard_exts[] = {
 #ifndef OPENSSL_NO_OCSP
     &ossl_v3_crl_invdate,
 #endif
-    &ossl_v3_sxnet,
-    &ossl_v3_info,
+    // &ossl_v3_sxnet,
+    // &ossl_v3_info,
 #ifndef OPENSSL_NO_RFC3779
     &ossl_v3_addr,
     &ossl_v3_asid,
@@ -51,27 +51,27 @@ static const X509V3_EXT_METHOD *standard_exts[] = {
     &ossl_v3_ocsp_acutoff,
     &ossl_v3_ocsp_serviceloc,
 #endif
-    &ossl_v3_sinfo,
-    &ossl_v3_policy_constraints,
+    // &ossl_v3_sinfo,
+    // &ossl_v3_policy_constraints,
 #ifndef OPENSSL_NO_OCSP
     &ossl_v3_crl_hold,
 #endif
-    &ossl_v3_pci,
-    &ossl_v3_name_constraints,
-    &ossl_v3_policy_mappings,
-    &ossl_v3_inhibit_anyp,
-    &ossl_v3_idp,
-    &ossl_v3_alt[2],
-    &ossl_v3_freshest_crl,
+    // &ossl_v3_pci,
+    // &ossl_v3_name_constraints,
+    // &ossl_v3_policy_mappings,
+    // &ossl_v3_inhibit_anyp,
+    // &ossl_v3_idp,
+    // &ossl_v3_alt[2],
+    // &ossl_v3_freshest_crl,
 #ifndef OPENSSL_NO_CT
     &ossl_v3_ct_scts[0],
     &ossl_v3_ct_scts[1],
     &ossl_v3_ct_scts[2],
 #endif
-    &ossl_v3_utf8_list[0],
-    &ossl_v3_issuer_sign_tool,
-    &ossl_v3_tls_feature,
-    &ossl_v3_ext_admission
+    // &ossl_v3_utf8_list[0],
+    // &ossl_v3_issuer_sign_tool,
+    // &ossl_v3_tls_feature,
+    // &ossl_v3_ext_admission
 };
 
 /* Number of standard extensions */
