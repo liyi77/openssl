@@ -44,16 +44,16 @@ typedef struct enc_struct {
 static const BIO_METHOD methods_enc = {
     BIO_TYPE_CIPHER,
     "cipher",
-    bwrite_conv,
-    enc_write,
-    bread_conv,
-    enc_read,
-    NULL,                       /* enc_puts, */
-    NULL,                       /* enc_gets, */
-    enc_ctrl,
-    enc_new,
-    enc_free,
-    enc_callback_ctrl,
+    // bwrite_conv,
+    // enc_write,
+    // bread_conv,
+    // enc_read,
+    // NULL,                       /* enc_puts, */
+    // NULL,                       /* enc_gets, */
+    // enc_ctrl,
+    // enc_new,
+    // enc_free,
+    // enc_callback_ctrl,
 };
 
 const BIO_METHOD *BIO_f_cipher(void)
